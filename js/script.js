@@ -7,7 +7,7 @@ $(window).load(function() {
         $(this).text(data[smile].title);
     });
     $('#image_next').each(function() {
-        $(this).attr('href', `/?smile=${nextSmile}`);
+        $(this).attr('href', `?smile=${nextSmile}`);
     });
     $('#icon_robot').click(function() {        
         controller.toPosition();
@@ -93,7 +93,7 @@ const controller = {
     canvas: {},
     
     toPosition: function () {
-        $('#title_link').attr('href', `/?smile=${param.getSmile()}&done`);
+        $('#title_link').attr('href', `?smile=${param.getSmile()}&done`);
         
         for (item of controller.model) {
             item.canvas.animate({
