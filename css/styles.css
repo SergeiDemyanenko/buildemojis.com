@@ -6,7 +6,7 @@
 #model{position: absolute; user-select: none; visibility: hidden; opacity: 0.05; top: 40%; left: 50%; transform: translate(-50%, -50%);}
 #model .item {position: relative; font: 15vw Times New Roman;}
 
-#canvas {height: 89%; width: 99%;}
+#canvas {height: 89vh; width: 99%;}
 #canvas .item {position: absolute; cursor: grab;}
 
 #bmc_img {position: fixed; height: 60px; width: 217px; bottom: 10px; right: 10px;}
