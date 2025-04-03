@@ -15,16 +15,25 @@ $(window).load(function() {
     
     let model = $('#model');
     let canvas = $('#canvas');
-    
+
+    if (data[smile].modelStyleFix !== undefined) {
+        for (const prop in data[smile].modelStyleFix) {
+console.log(model, model.width(), data[smile].modelStyleFix[prop]);
+            model.css(prop, model.width() * data[smile].modelStyleFix[prop]);
+        }
+    }
+
     for (const obj of data[smile].model) {
         let modelItem = $(`<span class="item">${obj.character}</span>`);
         model.append(modelItem);
-        
-        for (const prop in obj.item) {
-            modelItem.css(prop, modelItem.height() * obj.item[prop]);
+
+        if (obj.itemStyleFix !== undefined) {
+            for (const prop in obj.itemStyleFix) {
+                modelItem.css(prop, modelItem.height() * obj.itemStyleFix[prop]);
+            }
         }
 
-        let canvasItem = $(`<canvas class="item" width="${modelItem.width() * obj.canvas.witdth}" height="${modelItem.height() * obj.canvas.height}"></canvas>`);
+        let canvasItem = $(`<canvas class="item" width="${modelItem.width() * obj.canvas.width}" height="${modelItem.height() * obj.canvas.height}"></canvas>`);
         canvas.prepend(canvasItem);
         
         let context = canvasItem[0].getContext('2d');
