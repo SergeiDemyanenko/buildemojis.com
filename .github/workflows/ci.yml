@@ -1,0 +1,27 @@
+name: PR Tests
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Syntax, Schema & Integration Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check JavaScript syntax
+        run: |
+          node --check public/js/data.js
+          node --check public/js/script.js
+          node --check tests/test.js
+
+      - name: Run automated test suite
+        run: node tests/test.js

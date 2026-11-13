@@ -1,0 +1,33 @@
+{
+  "name": "Build an Emoji — Emoticon & Kaomoji Puzzle Game",
+  "short_name": "Build an Emoji",
+  "description": "Interactive browser puzzle game where you drag and drop character pieces to assemble classic text emoticons and kaomoji like Smile :), Shrug ¯\\_(ツ)_/¯, and Table Flip (╯°□°）╯︵ ┻━┻.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "image/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "image/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "image/og-preview.png",
+      "sizes": "1200x630",
+      "type": "image/png"
+    }
+  ]
+}

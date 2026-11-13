@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="60" height="60">
+  <!-- Antenna -->
+  <circle cx="50" cy="6" r="5" fill="#000000"/>
+  <rect x="47.5" y="9" width="5" height="6" fill="#000000"/>
+  <!-- Shoulders, Arms, and Hands -->
+  <path d="M22 53 C16 53 14 57 14 62 L14 82 L19 82 L19 67 L22 67 Z" fill="#000000"/>
+  <circle cx="16.5" cy="85" r="5" fill="#000000"/>
+  <path d="M78 53 C84 53 86 57 86 62 L86 82 L81 82 L81 67 L78 67 Z" fill="#000000"/>
+  <circle cx="83.5" cy="85" r="5" fill="#000000"/>
+  <!-- Main Head & Body -->
+  <path d="M22 44 C22 27 34 17 50 17 C66 17 78 27 78 44 L78 75 C78 85 70 90 59 90 L41 90 C30 90 22 85 22 75 Z" fill="#000000"/>
+  <!-- Face Visor -->
+  <path d="M31 41 C31 30 39 25 50 25 C61 25 69 30 69 41 C69 46 66 48 61 48 C56 48 53 47 50 47 C47 47 44 48 39 48 C34 48 31 46 31 41 Z" fill="#ffffff"/>
+  <!-- Eyes -->
+  <circle cx="37.5" cy="40" r="3.6" fill="#000000"/>
+  <circle cx="62.5" cy="40" r="3.6" fill="#000000"/>
+  <!-- Chest Indicator Dots -->
+  <circle cx="56" cy="60" r="2.4" fill="#ffffff"/>
+  <circle cx="61.5" cy="60" r="2.4" fill="#ffffff"/>
+  <circle cx="67" cy="60" r="2.4" fill="#ffffff"/>
+  <!-- Bottom Wheel -->
+  <path d="M38 91.5 L62 91.5 C60 97 55.5 99.5 50 99.5 C44.5 99.5 40 97 38 91.5 Z" fill="#000000"/>
+</svg>
+

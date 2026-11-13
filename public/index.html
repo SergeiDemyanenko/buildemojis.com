@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Build an Emoji — Interactive Emoticon &amp; Kaomoji Puzzle Game</title>
+
+  <!-- Primary SEO Meta Tags -->
+  <meta name="description"
+    content="Build an Emoji is a free interactive browser puzzle game where you drag and drop character pieces to assemble classic text emoticons and kaomoji like Smile :), Shrug ¯\_(ツ)_/¯, and Table Flip (╯°□°)╯︵┻┻. Inspired by https://buildshruggie.com/.">
+  <meta name="keywords"
+    content="build an emoji, emoji puzzle game, kaomoji game, text emoticons, build shruggie, shrug emoji, table flip kaomoji, ascii emoticon puzzle, browser mini game">
+  <meta name="author" content="Sergey Demyanenko, https://www.linkedin.com/in/sergey-demyanenko/">
+  <meta name="repository" content="https://github.com/SergeiDemyanenko/buildemojis.com">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light">
+
+  <!-- Canonical & Discovery Links -->
+  <link rel="canonical" id="canonical_link" href="https://buildemojis.com/">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="image/favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="apple-touch-icon" href="image/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="alternate" type="text/plain" title="LLM Context (GEO)" href="https://buildemojis.com/llms.txt">
+
+  <!-- Open Graph / Facebook / Telegram / Discord / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Build an Emoji">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://buildemojis.com/">
+  <meta property="og:title" content="Build an Emoji — Interactive Emoticon &amp; Kaomoji Puzzle Game">
+  <meta property="og:description"
+    content="Drag and drop character pieces to assemble classic text emoticons and kaomoji like Smile :), Shrug ¯\_(ツ)_/¯, and Table Flip (╯°□°)╯︵┻┻!">
+  <meta property="og:image" content="https://buildemojis.com/image/og-preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Build an Emoji — Assemble classic text emoticons and kaomoji like ¯\_(ツ)_/¯">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://buildemojis.com/">
+  <meta name="twitter:title" content="Build an Emoji — Interactive Emoticon &amp; Kaomoji Puzzle Game">
+  <meta name="twitter:description"
+    content="Drag and drop character pieces to assemble classic text emoticons and kaomoji like Smile :), Shrug ¯\_(ツ)_/¯, and Table Flip (╯°□°)╯︵┻┻!">
+  <meta name="twitter:image" content="https://buildemojis.com/image/og-preview.png">
+  <meta name="twitter:image:alt" content="Build an Emoji — Assemble classic text emoticons and kaomoji like ¯\_(ツ)_/¯">
+
+  <!-- Structured Data (Schema.org JSON-LD for SEO & GEO AI Search) -->
+  <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://buildemojis.com/#website",
+              "url": "https://buildemojis.com/",
+              "name": "Build an Emoji",
+              "description": "Interactive browser puzzle game where players assemble classic text emoticons and kaomoji from scattered character glyphs.",
+              "inLanguage": "en",
+              "publisher": {
+                "@id": "https://buildemojis.com/#author"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://buildemojis.com/#author",
+              "name": "Sergey Demyanenko",
+              "url": "https://www.linkedin.com/in/sergey-demyanenko/",
+              "sameAs": [
+                "https://www.linkedin.com/in/sergey-demyanenko/",
+                "https://github.com/SergeiDemyanenko"
+              ]
+            },
+            {
+              "@type": ["VideoGame", "WebApplication"],
+              "@id": "https://buildemojis.com/#game",
+              "name": "Build an Emoji",
+              "alternateName": "buildemojis.com",
+              "url": "https://buildemojis.com/",
+              "image": "https://buildemojis.com/image/og-preview.png",
+              "description": "Drag and drop character pieces on the canvas to assemble 16 classic text emoticons and Japanese kaomoji including Smile :), Rose @}->--, Shrug ¯\\_(ツ)_/¯, and Table Flip (╯°□°)╯︵┻┻. Inspired by https://buildshruggie.com/.",
+              "applicationCategory": "GameApplication",
+              "genre": ["Puzzle", "Casual", "Typography Game"],
+              "gamePlatform": ["Web Browser", "Mobile Web Browser"],
+              "operatingSystem": "Any",
+              "playMode": "SinglePlayer",
+              "inLanguage": "en",
+              "isAccessibleForFree": true,
+              "license": "https://opensource.org/licenses/MIT",
+              "codeRepository": "https://github.com/SergeiDemyanenko/buildemojis.com",
+              "author": {
+                "@id": "https://buildemojis.com/#author"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+              }
+            },
+            {
+              "@type": "ItemList",
+              "@id": "https://buildemojis.com/#levels",
+              "name": "Playable Emoticon & Kaomoji Levels",
+              "numberOfItems": 16,
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Smile :)", "url": "https://buildemojis.com/?smile=smile" },
+                { "@type": "ListItem", "position": 2, "name": "Laughing :D", "url": "https://buildemojis.com/?smile=laughing" },
+                { "@type": "ListItem", "position": 3, "name": "Tears of happiness :')", "url": "https://buildemojis.com/?smile=tears_of_happiness" },
+                { "@type": "ListItem", "position": 4, "name": "Surprise :-O", "url": "https://buildemojis.com/?smile=surprise" },
+                { "@type": "ListItem", "position": 5, "name": "Kiss :-*", "url": "https://buildemojis.com/?smile=kiss" },
+                { "@type": "ListItem", "position": 6, "name": "Wink ;-)", "url": "https://buildemojis.com/?smile=wink" },
+                { "@type": "ListItem", "position": 7, "name": "Tongue sticking out :-P", "url": "https://buildemojis.com/?smile=tongue_sticking_out" },
+                { "@type": "ListItem", "position": 8, "name": "Angel O:-)", "url": "https://buildemojis.com/?smile=angel" },
+                { "@type": "ListItem", "position": 9, "name": "Evil >:-)", "url": "https://buildemojis.com/?smile=evil" },
+                { "@type": "ListItem", "position": 10, "name": "Rose @}->--", "url": "https://buildemojis.com/?smile=rose" },
+                { "@type": "ListItem", "position": 11, "name": "Shock (O_O)", "url": "https://buildemojis.com/?smile=shock" },
+                { "@type": "ListItem", "position": 12, "name": "Troubled (>_<)", "url": "https://buildemojis.com/?smile=troubled" },
+                { "@type": "ListItem", "position": 13, "name": "Excited \\(^o^)/", "url": "https://buildemojis.com/?smile=excited" },
+                { "@type": "ListItem", "position": 14, "name": "Worried (-_-メ)", "url": "https://buildemojis.com/?smile=worried" },
+                { "@type": "ListItem", "position": 15, "name": "Shrug ¯\\_(ツ)_/¯", "url": "https://buildemojis.com/?smile=shrug" },
+                { "@type": "ListItem", "position": 16, "name": "Table flip (╯°□°)╯︵┻┻", "url": "https://buildemojis.com/?smile=table_flip" }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://buildemojis.com/#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is Build an Emoji (buildemojis.com)?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Build an Emoji is a free browser puzzle game created by Sergey Demyanenko (inspired by https://buildshruggie.com/) where you drag and drop scattered typographic characters to assemble 16 classic text emoticons and Japanese kaomoji such as Smile :), Shrug ¯\\_(ツ)_/¯, and Table Flip (╯°□°)╯︵┻┻."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How do you play Build an Emoji?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Drag the character pieces across the screen using your mouse or touchscreen to arrange them into the emoticon named in the top-left corner. When all pieces are placed in the right relative positions, they automatically snap together. You can also click the robot button ('Do it for me') to auto-solve the puzzle, or click 'Next emoji' to switch levels."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+        </script>
+
+  <script src="js/data.js"></script>
+  <script defer src="js/script.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BZMLG8MCGX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-BZMLG8MCGX');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&family=Noto+Serif:wght@400&display=swap"
+    rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <!-- Top Header Bar (Concept 1: Minimal Evolved) -->
+  <header id="head">
+    <div id="left">
+      <a id="image_prev" class="nav-btn" title="Previous emoji ([)" aria-label="Previous emoji">
+        <img id="icon_prev" class="icon icon-prev" src="image/next.svg" alt="Previous emoji" />
+      </a>
+      <div class="level-picker-wrap">
+        <span id="level_badge" class="level-badge">1 / 16</span>
+        <a id="title_link"><span id="title"></span></a>
+        <select id="level_select" aria-label="Select emoji level" title="Choose emoji level"></select>
+      </div>
+      <a id="image_next" class="nav-btn" title="Next emoji (])" aria-label="Next emoji">
+        <img id="icon_next" class="icon" src="image/next.svg" alt="Next emoji" />
+      </a>
+    </div>
+
+    <p id="hint_banner" class="hint-banner">Drag characters into the center zone to build the emoji</p>
+
+    <div id="right">
+      <div class="shortcuts-wrap">
+        <button type="button" id="btn_shortcuts" class="icon-btn" title="Keyboard shortcuts (?)"
+          aria-label="Keyboard shortcuts" aria-expanded="false">
+          <svg class="ui-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+            <path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M8 12h.01M12 12h.01M16 12h.01M7 16h10"></path>
+          </svg>
+        </button>
+        <div id="shortcuts_popover" class="shortcuts-popover" role="dialog" aria-label="Keyboard shortcuts" hidden>
+          <div class="shortcuts-title">Keyboard Shortcuts</div>
+          <div class="shortcuts-list">
+            <div class="shortcut-row"><kbd>Tab</kbd><span>Select next piece</span></div>
+            <div class="shortcut-row"><kbd>&uarr; &darr; &larr; &rarr;</kbd><span>Move selected piece</span></div>
+            <div class="shortcut-row"><kbd>Shift + &uarr;&darr;&larr;&rarr;</kbd><span>Move piece faster</span></div>
+            <div class="shortcut-row"><kbd>O</kbd><span>Toggle target outline</span></div>
+            <div class="shortcut-row"><kbd>R</kbd><span>Scatter pieces (Reset)</span></div>
+            <div class="shortcut-row"><kbd>[ / ]</kbd><span>Previous / Next level</span></div>
+            <div class="shortcut-row"><kbd>Space</kbd><span>Auto-solve (Robot)</span></div>
+          </div>
+        </div>
+      </div>
+      <button type="button" id="btn_theme" class="icon-btn" title="Toggle dark/light theme"
+        aria-label="Toggle dark/light theme" aria-pressed="false">
+        <span id="theme_icon" aria-hidden="true">&#9789;</span>
+      </button>
+      <button type="button" id="btn_outline" class="action-btn" title="Toggle target outline hint (O)"
+        aria-pressed="false">
+        Outline
+      </button>
+      <button type="button" id="btn_reset" class="action-btn" title="Scatter pieces again (R)">
+        Reset
+      </button>
+      <button type="button" id="btn_robot" class="action-btn action-btn-primary" title="Do it for me (Space)">
+        <img id="icon_robot" class="icon" src="image/robot.svg" alt="Do it for me" />
+        <span>Robot</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Center Assembly Target Zone (visual guide behind canvas pieces) -->
+  <div id="target_zone" aria-hidden="true">
+    <span id="target_zone_label">Assembly Zone (click &ldquo;Outline&rdquo; for a hint)</span>
+  </div>
+
+  <!-- Hidden/Toggleable Reference Model -->
+  <div id="model"></div>
+
+  <!-- Interactive Draggable Canvas -->
+  <div id="canvas"></div>
+
+  <!-- Bottom Win-State Toast -->
+  <div id="win_toast" class="win-toast" hidden>
+    <span class="win-label">Assembled:</span>
+    <code id="win_emoji_text" class="win-emoji-text">:)</code>
+    <button type="button" id="btn_copy" class="win-btn win-btn-copy" title="Copy emoji text">Copy</button>
+    <button type="button" id="btn_copy_link" class="win-btn win-btn-link"
+      title="Copy shareable link to this assembled emoji">Copy Link</button>
+    <a id="win_next" class="win-btn win-btn-next" href="?smile=laughing">Next &rarr;</a>
+  </div>
+
+  <noscript>
+    <section>
+      <h1>Build an Emoji — Interactive Text Emoticon &amp; Kaomoji Puzzle Game</h1>
+      <p>Drag and drop character pieces to assemble 16 classic text emoticons and Japanese kaomoji. Enable
+        JavaScript to play directly in your browser. Inspired by <a
+          href="https://buildshruggie.com/">buildshruggie.com</a>.</p>
+      <h2>Playable Emoticon Levels:</h2>
+      <ul>
+        <li><a href="?smile=smile">Smile — :)</a></li>
+        <li><a href="?smile=laughing">Laughing — :D</a></li>
+        <li><a href="?smile=tears_of_happiness">Tears of happiness — :')</a></li>
+        <li><a href="?smile=surprise">Surprise — :-O</a></li>
+        <li><a href="?smile=kiss">Kiss — :-*</a></li>
+        <li><a href="?smile=wink">Wink — ;-)</a></li>
+        <li><a href="?smile=tongue_sticking_out">Tongue sticking out — :-P</a></li>
+        <li><a href="?smile=angel">Angel — O:-)</a></li>
+        <li><a href="?smile=evil">Evil — &gt;:-)</a></li>
+        <li><a href="?smile=rose">Rose — @}-&gt;--</a></li>
+        <li><a href="?smile=shock">Shock — (O_O)</a></li>
+        <li><a href="?smile=troubled">Troubled — (&gt;_&lt;)</a></li>
+        <li><a href="?smile=excited">Excited — \(^o^)/</a></li>
+        <li><a href="?smile=worried">Worried — (-_-メ)</a></li>
+        <li><a href="?smile=shrug">Shrug — ¯\_(ツ)_/¯</a></li>
+        <li><a href="?smile=table_flip">Table flip — (╯°□°)╯︵┻┻</a></li>
+      </ul>
+    </section>
+  </noscript>
+</body>
+
+</html>
