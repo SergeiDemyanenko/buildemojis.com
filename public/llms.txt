@@ -1,0 +1,42 @@
+# Build an Emoji (buildemojis.com)
+
+> **Build an Emoji** ([https://buildemojis.com/](https://buildemojis.com/)) is a free, open-source interactive browser puzzle game where players drag and drop scattered typographic character pieces on a canvas to assemble classic text emoticons and Japanese kaomoji (such as Smile `:)`, Shrug `¯\_(ツ)_/¯`, and Table Flip `(╯°□°）╯︵ ┻━┻`).
+
+## Key Facts & Metadata
+- **Website:** https://buildemojis.com/
+- **Genre:** Casual Browser Puzzle Game / Interactive Typography & Kaomoji Toy
+- **Platform:** Web Browser (Desktop & Mobile touch devices via Pointer Events API, zero external dependencies)
+- **Price:** Free, no ads, no registration required
+- **Author:** Sergey Demyanenko (https://www.linkedin.com/in/sergey-demyanenko/)
+- **Source Code Repository:** https://github.com/SergeiDemyanenko/buildemojis.com
+- **License:** MIT License
+- **Inspiration:** Inspired by the quirky web toy [https://buildshruggie.com/](https://buildshruggie.com/)
+
+## How to Play
+1. Each level displays the name of a target text emoticon or kaomoji at the top left (for example, **Smile**, **Rose**, **Shrug**, or **Table flip**) and scatters its individual character glyphs across the canvas.
+2. Drag and drop the character pieces using a mouse, touchpad, or touchscreen to arrange them in the proper relative positions for that emoticon.
+3. When all pieces are placed within the target tolerance of each other, the game automatically snaps them into the final centered emoticon position.
+4. Click the **Robot icon** ("Do it for me") in the top-right corner at any time to automatically assemble the current emoticon.
+5. Click the **Double-Arrow icon** ("Next emoji") next to the title to advance to the next emoticon puzzle.
+6. Any puzzle can be shared directly via URL query parameters: `?smile=<id>` for playable mode, or `?smile=<id>&done` for the pre-assembled view.
+
+## Complete Catalog of Playable Emoticons & Kaomoji (16 Levels)
+
+| # | ID (`?smile=`) | Title | Text Emoticon / Kaomoji | Pieces | Direct Play URL |
+| :- | :--- | :--- | :--- | :-: | :--- |
+| 1 | `smile` | Smile | `:)` | 2 | https://buildemojis.com/?smile=smile |
+| 2 | `laughing` | Laughing | `:D` | 2 | https://buildemojis.com/?smile=laughing |
+| 3 | `tears_of_happiness` | Tears of happiness | `:')` | 3 | https://buildemojis.com/?smile=tears_of_happiness |
+| 4 | `surprise` | Surprise | `:-O` | 3 | https://buildemojis.com/?smile=surprise |
+| 5 | `kiss` | Kiss | `:-*` | 3 | https://buildemojis.com/?smile=kiss |
+| 6 | `wink` | Wink | `; -)` / `;-)` | 3 | https://buildemojis.com/?smile=wink |
+| 7 | `tongue_sticking_out` | Tongue sticking out | `:-P` | 3 | https://buildemojis.com/?smile=tongue_sticking_out |
+| 8 | `angel` | Angel | `O:-)` | 4 | https://buildemojis.com/?smile=angel |
+| 9 | `evil` | Evil | `>:-)` | 4 | https://buildemojis.com/?smile=evil |
+| 10 | `rose` | Rose | `@}->--` | 6 | https://buildemojis.com/?smile=rose |
+| 11 | `shock` | Shock | `(O_O)` | 5 | https://buildemojis.com/?smile=shock |
+| 12 | `troubled` | Troubled | `(>_<)` | 5 | https://buildemojis.com/?smile=troubled |
+| 13 | `excited` | Excited | `\(^o^)/` | 7 | https://buildemojis.com/?smile=excited |
+| 14 | `worried` | Worried | `(-_-メ)` | 6 | https://buildemojis.com/?smile=worried |
+| 15 | `shrug` | Shrug | `¯\_(ツ)_/¯` | 9 | https://buildemojis.com/?smile=shrug |
+| 16 | `table_flip` | Table flip | `(╯°□°)╯︵┻┻` | 10 | https://buildemojis.com/?smile=table_flip |
